@@ -1,0 +1,15 @@
+<?php
+/*
+ * Implements hook_form_alter().
+ */
+function islandora_solr_search_preserve_filters_form_alter( &$form, &$form_state, $form_id ) {
+  switch ($form_id) {
+    case 'islandora_solr_advanced_search_form':
+      if (isset($form['controls']['islandora_solr_allow_preserve_filters'])) {
+        $form['controls']['islandora_solr_allow_preserve_filters']['#default_value'] = TRUE;
+      }
+      break;
+    default:
+  }
+}
+

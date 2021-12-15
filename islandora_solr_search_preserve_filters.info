@@ -1,0 +1,7 @@
+name = Islandora Solr Search Preserve Filters
+dependencies[] = islandora
+dependencies[] = islandora_solr
+description = Default Solr advanced search to preserve filters
+package = Islandora Search
+version = 7.x-1.13
+core = 7.x
